@@ -41,6 +41,15 @@
 
       <script id='DOM manipulation script'>
         // write me! (... without using cloneNode, that's kind of cheating)
+        
+        /* solution with Ahed
+
+        const newthing = document.getElementById('modified').children[0];
+        newthing.innerText = 'hi!';
+        */
+
+        document.getElementById('modified').children[0].innerText = 'hi!';
+        
       </script>
 
     </div>

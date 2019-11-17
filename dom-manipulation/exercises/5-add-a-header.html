@@ -54,6 +54,13 @@
 
       <script id='DOM manipulation script'>
         // write me! (... without using cloneNode, that's kind of cheating)
+        var newElement = document.createElement('H1');
+       document.getElementById('modified').appendChild(newElement);
+       document.getElementById('modified').children[0].innerText = 'a list of things';
+       document.getElementById('modified').children[0].nodeName = 'H1';
+
+
+       document.getElementById('modified').children[1].innerText = 'robots solar systems oil';
       </script>
 
     </div>
