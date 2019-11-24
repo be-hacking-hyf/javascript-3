@@ -51,6 +51,24 @@ function exercise1() { // replace all of the null's to pass the assertions
 
   const product = null; // fix this line to pass the assert
   console.assert(product === 16, "create the value 16 using your closed functions");
+    const one = closeAValue(1);
+    const oneReturns = one();
+    console.assert(oneReturns === one, "asserting one's return value");
+
+    const two = closeAValue(2);
+    const twoReturns = two();
+    console.assert(twoReturns === two, "asserting two's return value");
+
+    const three = three;
+    const threeReturns = three;
+    console.assert(threeReturns === 4, "asserting three's return value");
+
+
+    const sum = one + two + three(); // fix this line to pass the assert
+    console.assert(sum === 7, "summing closed values");
+
+    const product = x => x * 2; // fix this line to pass the assert
+    console.assert(product === 16, "create the value 16 using your closed functions");
 
 }
 exercise1.display = true;
