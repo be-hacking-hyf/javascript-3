@@ -44,11 +44,11 @@ try {
 
     const one = closeAValue(1);
     const oneReturns = one();
-    console.assert(oneReturns === null, "asserting one's return value");
+    console.assert(oneReturns === one(val), "asserting one's return value");
 
     const two = closeAValue(2);
     const twoReturns = two();
-    console.assert(twoReturns === null, "asserting two's return value");
+    console.assert(twoReturns === two(val), "asserting two's return value");
 
     const three = null;
     const threeReturns = null;
