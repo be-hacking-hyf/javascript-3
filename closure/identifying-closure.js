@@ -21,7 +21,7 @@ function example_functionsReturningFunctions() {
   function returnsNewFunction(x) {
     return function () { console.log(x) };
   }
-  const newFunction = returnsNewFunction("hi!");
+  const newFunction = returnsNewFunction(argFunc);
   console.assert(newFunction !== argFunc,
     'a closure is created! the returned function was declared inside of "returnsNewFunction"');
 
@@ -182,7 +182,7 @@ sometimesCreatesAClosure2.display = true;
 identifyingClosure.push(sometimesCreatesAClosure2)
 
 
-console.groupCollapsed('Identifying Closure')
+console.group('Identifying Closure')
 const evaluatedIdentifyingClosure = identifyingClosure
   .map(f => evaluate(f))
   .map(report => {
