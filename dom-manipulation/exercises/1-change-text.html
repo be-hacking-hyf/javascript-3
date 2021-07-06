@@ -41,6 +41,12 @@
 
       <script id='DOM manipulation script'>
         // write me! (... without using cloneNode, that's kind of cheating)
+        const modifiedDiv = document.getElementById('modified');
+        const h1 = modifiedDiv.children[0];
+        h1.innerHTML = 'hi!'
+        const h1El = document.getElementById("modified").children[0];
+        h1El.innerHTML ="hi!";
+       
       </script>
 
     </div>

@@ -2,6 +2,7 @@ try {
 
   function linkedButton(arr) {
     // write me! (after studying some examples ;)
+    <button onclick="window.location='http://www.example.com';">Visit Page Now</button>
   }
 
 
