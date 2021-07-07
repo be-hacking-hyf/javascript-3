@@ -42,6 +42,29 @@
 
       <script id='DOM manipulation script'>
        // write me! (... without using cloneNode, that's kind of cheating)
+       //document.getElementById('modified').children[0].innerText = 'a great tutorial on DOM manipulation: Mr. Traversy does it again!';
+       
+       var newElement = document.createElement('A');
+       document.getElementById('modified').appendChild(newElement);
+       document.getElementById('modified').children[1].innerText = 'Mr. Traversy does it again!';
+
+      
+       newElement.title = 'Mr. Traversy does it again!';
+       newElement.href = 'https://www.youtube.com/watch?v=0ik6X4DJKCc';
+      
+       
+       document.getElementById('modified').children[1].target = '_blank';
+
+
+      /* stackoverflow
+      var a = document.createElement('a');
+var linkText = document.createTextNode("my title text");
+a.appendChild(linkText);
+a.title = "my title text";
+a.href = "http://example.com";
+document.body.appendChild(a);
+      */
+
       </script>
 
     </div>
